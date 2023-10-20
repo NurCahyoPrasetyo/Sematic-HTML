@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+
+:root {
+    --fonts-main: "Quicksand", sans-serif;
+    --font-IBM-mono: 'IBM Plex Mono', monospace;
+
+    --color-primary: #F07470;
+    --color-secondery: #f0b470;
+    --color-text-heading: #ee5e59;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonts-main);
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(174.2deg, rgba(255, 244, 228, 1) 7.1%, rgba(240, 246, 238, 1) 67.4%);
+
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: var(--color-primary);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 11px 0px 0px rgba(240, 180, 112, 0.74);
+    -webkit-box-shadow: 0px 11px 0px 0px rgba(240, 180, 112, 0.74);
+    -moz-box-shadow: 0px 11px 0px 0px rgba(240, 180, 112, 0.74);
+    z-index: 9990;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+main {
+    padding: 20px;
+
+    display: flex;
+    gap: 1.5rem;
+    max-width: 1280px;
+    margin: auto;
+}
+
+aside {
+    flex: 1;
+}
+
+h2,
+h3 {
+    color: var(--color-text-heading);
+    font-family: var(--font-IBM-mono);
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+footer {
+    padding: 20px;
+    color: #fff;
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+#content {
+    flex: 3;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+#info-table-label {
+    text-align: center;
+}
+
+
+.jumbotron {
+    background-color: var(--color-primary);
+    position: relative;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron img {
+    width: 100%;
+    height: calc(100vh - 65px);
+    opacity: 0.95;
+    object-fit: cover;
+}
+
+.handline {
+    position: absolute;
+    z-index: 200;
+    bottom: 80px;
+    padding-left: 4rem;
+    width: 100%;
+}
+
+.handline h1 {
+    font-size: 64px;
+    text-align: start;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0px;
+    text-shadow: -7px 3px 4px rgba(220, 28, 19, 0.6);
+}
+
+.handline p {
+    font-size: 20px;
+    text-align: start;
+    color: white;
+    width: 60%;
+    text-shadow: -5px 8px 4px rgba(0, 0, 0, 0.49);
+    padding: 20px;
+    background: rgba(240, 116, 112, 0.85);
+    border-radius: 12px;
+
+    box-shadow: 18px 18px 0px 0px rgba(240, 180, 112, 0.74);
+    -webkit-box-shadow: 18px 18px 0px 0px rgba(240, 180, 112, 0.74);
+    -moz-box-shadow: 18px 18px 0px 0px rgba(240, 180, 112, 0.74);
+}
+
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    max-width: 230px;
+}
+
+.profile header>p {
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    padding: 20px;
+    background: rgba(240, 180, 112, 0.24);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 26px;
+}
+
+.card p {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.card:nth-child(2) div,
+.card:nth-child(3) div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card:nth-child(3) div {
+    flex-direction: row-reverse;
+}
+
+.card div>p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.card div>img {
+    border-radius: 18px;
+    max-width: 420px;
+    max-height: 320px;
+    cursor: zoom-in;
+}
+
+.card-child {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-child section {
+    width: 50%;
+    position: relative;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transform: scale(.95);
+    cursor: pointer;
+}
+
+.card-child section:hover {
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.card-child img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.card-child p {
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 8px;
+    background: #fff;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    font-size: 14px;
+}
+
+.card-child h3 {
+    background: #fff;
+    width: 180px;
+    padding: 10px;
+    border-radius: 14px;
+    position: absolute;
+    top: -20px;
+    left: -8px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.info-table td,
+.info-table th {
+    text-align: left;
+    font-size: 14px;
+}
+
+.info-table th::after {
+    content: ":";
+    float: right;
+    margin: 0 6px;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+
+    .handline {
+        padding-left: 30px;
+    }
+
+    .handline p {
+        font-size: 12px;
+    }
+
+    .card:nth-child(2) div,
+    .card:nth-child(3) div,
+    .card-child {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card div>p,
+    .card p {
+        font-size: 10px;
+    }
+
+    .card-child section {
+        width: 90%;
+    }
+
+    .profile img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

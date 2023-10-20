@@ -1,0 +1,73 @@
+#myBtnDot {
+    display: block;
+    position: fixed;
+    top: calc(24px + 60px);
+    right: 30px;
+    z-index: 9999;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f0b470;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 14px;
+    box-shadow: 8px 8px 0px 0px rgba(240, 180, 112, 0.54);
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(240, 180, 112, 0.54);
+    -moz-box-shadow: 8px 8px 0px 0px rgba(240, 180, 112, 0.54);
+
+    transition: all 0.3s ease;
+    transform: scale(.76);
+}
+
+#myBtnDot:hover {
+    background-color: #d8a264;
+    box-shadow: 8px 8px 0px 0px rgba(216, 162, 100, 0.54);
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(216, 162, 100, 0.54);
+    -moz-box-shadow: 8px 8px 0px 0px rgba(216, 162, 100, 0.54);
+
+    transition: all 0.3s ease;
+    transform: scale(.9);
+}
+
+#contentList {
+    display: none;
+    position: relative;
+}
+
+#contentList ul {
+    position: absolute;
+    right: -24px;
+    top: 18px;
+    width: 164px;
+    padding: 0;
+    border-radius: 14px;
+
+    box-shadow: 8px 8px 0px 0px rgba(216, 162, 100, 0.54);
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(216, 162, 100, 0.54);
+    -moz-box-shadow: 8px 8px 0px 0px rgba(216, 162, 100, 0.54);
+    background-color: #f0b470;
+}
+
+#contentList li {
+    list-style: none;
+    text-align: right;
+    padding: 8px;
+}
+
+#contentList li:hover {
+    list-style: none;
+    text-align: right;
+    padding: 8px;
+    background: rgba(216, 162, 100);
+    border-radius: 14px;
+
+}
+
+#contentList a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    font-weight: bold;
+    transform: scale(.9);
+}
